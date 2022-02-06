@@ -29,7 +29,7 @@ class Main extends PluginBase implements Listener {
         if($entity instanceof Player && $event instanceof ProjectileHitEntityEvent){
             $target = $event->getEntityHit();
             if($target instanceof Player){
-		if($this->getConfig()->getNested("sound-enable", true)){
+				if($this->getConfig()->getNested("sound-enable", true)){
                 $pk = new PlaySoundPacket();
                 $pk->x = $entity->getPosition()->getX();
                 $pk->y = $entity->getPosition()->getY();
@@ -49,5 +49,5 @@ class Main extends PluginBase implements Listener {
                 }
             }
         }
-    }
+	}
 }
