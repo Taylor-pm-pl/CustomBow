@@ -38,8 +38,8 @@ class Main extends PluginBase implements Listener {
                 $pk->pitch = 1;
 				$pk->soundName = $this->getConfig()->getNested("hit-sound");
                 $entity->getNetworkSession()->sendDataPacket($pk);
-                $message = $this->getConfig()->get("hit-message");
 				}
+                $message = $this->getConfig()->get("hit-message");
                 if($this->getConfig()->getNested("message-enable", true)){
                     $entity->sendMessage(str_replace(['{hp}', '{damage}', '{name}', '{target}'], [$target->getHealth(), $projectile->getResultDamage(), $entity->getName(), $target->getDisplayName()], $message));
                 }
