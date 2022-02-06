@@ -1,0 +1,19 @@
+# Main Config of CustomBow
+# Will send to launched player and hit the projectile
+# If you want to send it to the player, set it to true.
+#
+# Replacement
+#
+# {hp}      : player's health
+# {damage}  : amount of damage
+# {name}    : player's name 
+# {target}   : target's display name
+#Here is the page for you to choose the sound you like: https://www.digminecraft.com/lists/sound_list_pe.php
+sound-enable: true
+hit-sound: "random.orb"
+# Message
+message-enable: true # Enable message ?
+hit-message: "§c{target} §7(§aHP: §e{hp}§7)"
+#Popup
+popup-enable: false # Enable popup ?
+hit-popup: "§c{name} §7(§aHP: §e{hp}§7)"
