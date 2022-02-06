@@ -1,0 +1,9 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/JeroGamingYT-pm-pl/CustomBow
+build-by-default: true
+branches:
+- main
+projects:
+  CustomBow:
+    path: ""
+    icon: icon.gif
+...
